@@ -5,6 +5,6 @@ v2.
  [],[],nil}.
 {<<"_build/test/lib/gilded_rose/ebin/Elixir.GildedRose.beam">>,
  'Elixir.GildedRose',module,<<"lib/gilded_rose.ex">>,
- ['Elixir.Kernel'],
+ ['Elixir.Kernel','Elixir.Module'],
  [erlang,'Elixir.Enum'],
  [],nil}.
