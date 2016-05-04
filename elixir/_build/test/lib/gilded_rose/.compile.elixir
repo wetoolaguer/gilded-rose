@@ -1,0 +1,10 @@
+v2.
+{<<"_build/test/lib/gilded_rose/ebin/Elixir.Item.beam">>,'Elixir.Item',module,
+ <<"lib/item.ex">>,
+ ['Elixir.Kernel','Elixir.Kernel.Utils','Elixir.Protocol','Elixir.Module'],
+ [],[],nil}.
+{<<"_build/test/lib/gilded_rose/ebin/Elixir.GildedRose.beam">>,
+ 'Elixir.GildedRose',module,<<"lib/gilded_rose.ex">>,
+ ['Elixir.Kernel'],
+ [erlang,'Elixir.Enum'],
+ [],nil}.
