@@ -44,12 +44,12 @@ defmodule GildedRose do
           if item.name == "+5 Dexterity Vest" || item.name == "Elixir of the Mongoose" do
             %{item | quality: item.quality - 2}
           else
-            #not yet done
             item
           end
         end
+
       item.name == "+5 Dexterity Vest" || item.name == "Elixir of the Mongoose" ->
-        %{item | quality: item.quality - 1}
+        %{item | quality: item.quality - 2}
       item.name != "Sulfuras, Hand of Ragnaros" ->
         %{item | quality: item.quality - 1}
       true ->

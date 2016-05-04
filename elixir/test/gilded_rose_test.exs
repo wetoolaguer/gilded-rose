@@ -68,7 +68,16 @@ defmodule GildedRoseTest do
   end
 
   test "NonConjured and NonBackstage: returns item if sell_in < 0" do
-    item = %{@aged_brie | sell_in: -1}
+    item = %{@aged_brie | sell_in: -1, quality: 50}
     assert GildedRose.update_item(item) == item
+  end
+  
+  test "Conjured: quality - 1 if sell_in > 0" do
+    item = %{@conjured | sell_in: 5, quality: 5}
+    assert GildedRose.update_item(item).quality == item.quality - 2
+  end
+
+  test "Sulfuras (Legendary item): doesn't degrade" do
+    assert GildedRose.update_item(@sulfuras) == @sulfuras
   end
 end
